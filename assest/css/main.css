@@ -1074,10 +1074,10 @@
 .home-product-item__brand{
     margin-right: auto;
 }
-
+/* 
 .home-product-item__origin-name{
 
-}
+} */
 
 .home-product-item__favourite{
     position: absolute;
@@ -1184,9 +1184,9 @@ i.home-product-item____action-like-fill{
     list-style-type: none;
 }
 
-.footer-item{
+/* .footer-item{
 
-}
+} */
 
 .footer-item__link{
     text-decoration: none;
