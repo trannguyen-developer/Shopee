@@ -1,0 +1,170 @@
+/* Mobile & tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header__car-list{
+        position: fixed;
+        top: 72px;
+        right: 0;
+        width: 100%;
+        padding:0 calc((100% - 644px) / 2);
+
+    }
+    .header__car-list::before{
+        display: none;
+    }
+    .header__car-list-item{
+        width: 100%;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        
+    }
+    .container{
+        margin-top: 118px;
+    }
+    .header__sort-bar{
+        display: flex;
+    }
+    .header__search{
+        height: 72px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-content{
+        padding-top: 8px;
+    }
+
+    .mobile-category{
+        display: block;
+    }
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .header{
+        height: 72px;
+    }
+    .header__search{
+        height: 72px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .header__search-car{
+        margin: 5px;
+        width: 50px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header__search{
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 18px;
+    }
+    .header__search-logo {
+        padding: 0;
+    }
+    .header__search-car{
+        margin: 0;
+    }
+    .header__mobile-search{
+        display: block;
+    }
+    .search-bar{
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: none;
+        animation: search_chuyendong linear 0.3s;
+        
+    }
+    .check-search__input:checked ~ .search-bar{
+        display: block;
+        top: 72px;
+    }
+
+    .search-bar__history{
+        width: 120%;
+        box-shadow: 0 1px 3px rgba(37, 37, 37, 0.1);
+    }
+
+    .pagination__margin{
+        margin: 48px 0px 32px 0px;
+        padding-left: 0;
+    }
+    .pagination-item{
+        margin: 0 2px;
+    }
+    
+    .pagination-item__link{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        min-width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 2px;
+        color: #939393;
+    }
+
+    .grid-content{
+        margin: 0 4px;
+    }
+    
+    @keyframes search_chuyendong {
+        from{
+            opacity: 0;
+            top: 36px;
+        }
+        to{
+            opacity: 1;
+            top: 72px;
+        }
+        
+    }
+    .footer__content{
+        padding: 12px 12px 0 12px;
+    }
+
+    .footer__heading{
+        text-align: center;
+    }
+
+    .footer-item{
+        text-align: center;
+    }
+    .footter__dowload{
+        justify-content: center;
+        
+    }
+    .footer__download-app{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    
+}
